@@ -1,0 +1,25 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 2, 2023
+ *      Author: OmarSoliman74
+ */
+#include "stdio.h"
+void main()
+{
+
+	int i;
+	int x;
+	int sum=1;
+	printf("enter the integer: ");
+	fflush (stdin); fflush (stdout);
+	scanf("%d",&x);
+	for (i=0,sum=0 ; i<x ; i++,sum++)
+	{
+		sum = sum + i;
+	}
+	printf("%d",sum);
+
+}
+
+

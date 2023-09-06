@@ -1,0 +1,60 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 2, 2023
+ *      Author: OmarSoliman74
+ */
+#include "stdio.h"
+void main()
+{
+
+	char operation;
+	float n1, n2;
+
+	printf("Enter an operator (+, -, *, /): ");
+	fflush (stdin); fflush (stdout);
+	scanf("%c", &operation);
+	printf("Enter first operands: ");
+	fflush (stdin); fflush (stdout);
+	scanf("%f",&n1);
+	printf("Enter second operands: ");
+	fflush (stdin); fflush (stdout);
+	scanf("%f", &n2);
+	switch(operation)
+	{
+	case '+':
+	{
+		printf("%.1lf + %.1lf = %.1lf",n1, n2, n1+n2);
+	}
+	break;
+
+	case '-':
+	{
+		printf("%.1lf - %.1lf = %.1lf",n1, n2, n1-n2);
+	}
+	break;
+
+	case '*':
+	{
+		printf("%.1lf * %.1lf = %.1lf",n1, n2, n1*n2);
+	}
+	break;
+
+	case '/':
+	{
+		printf("%.1lf / %.1lf = %.1lf",n1, n2, n1/n2);
+	}
+	break;
+
+	default:
+	{
+		printf("Error! operator is not correct");
+	}
+	}
+
+
+
+
+}
+
+

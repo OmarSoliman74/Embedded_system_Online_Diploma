@@ -1,0 +1,28 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 2, 2023
+ *      Author: OmarSoliman74
+ */
+#include "stdio.h"
+void main()
+{
+
+	char c;
+	printf("Enter a character: ");
+	fflush (stdin); fflush (stdout);
+	scanf("%c", &c);
+
+	if (c >= 'a' && c <= 'z')
+	{
+		printf("%c is an alphabet.", c);
+	}
+	else
+	{
+		printf("%c is not an alphabet.", c);
+	}
+
+
+}
+
+
