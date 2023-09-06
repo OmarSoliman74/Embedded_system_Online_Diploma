@@ -1,0 +1,37 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 2, 2023
+ *      Author: OmarSoliman74
+ */
+#include "stdio.h"
+void main()
+{
+	float a,b,c ;
+	printf("enter first number :");
+	fflush (stdin); fflush (stdout);
+	scanf("%f",&a);
+	printf("enter second number :");
+		fflush (stdin); fflush (stdout);
+		scanf("%f",&b);
+		printf("enter third number :");
+			fflush (stdin); fflush (stdout);
+			scanf("%f",&c);
+			if (a<b)
+			{
+				if (c<b)
+				{
+					printf("the biggest number =%f",b);
+				}
+				else
+				{
+					printf("the biggest number = %f",c);
+				}
+			}
+			else
+			{
+				printf("the biggest number = %f",a);
+			}
+}
+
+

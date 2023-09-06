@@ -1,0 +1,29 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 2, 2023
+ *      Author: OmarSoliman74
+ */
+#include "stdio.h"
+void main()
+{
+	float a ;
+	printf("enter the number :");
+	fflush (stdin); fflush (stdout);
+	scanf("%f",&a);
+
+			if (a<0)
+			{
+				printf("the number is negative");
+			}
+			else if (a==0)
+			{
+				printf("you entered 0");
+			}
+			else
+			{
+				printf("the number is postive");
+			}
+}
+
+
