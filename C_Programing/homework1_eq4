@@ -1,0 +1,26 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 2, 2023
+ *      Author: OmarSoliman74
+ */
+#include "stdio.h"
+void main()
+{
+	float x;
+	float y;
+	float sum;
+	printf("enter first number :");
+	fflush (stdin); fflush (stdout);
+	scanf("%f",&x);
+
+
+	printf("enter second number :");
+	fflush (stdin); fflush (stdout);
+	scanf("%f",&y);
+	sum = x +y ;
+	printf ("the sum = %f",sum);
+
+}
+
+
