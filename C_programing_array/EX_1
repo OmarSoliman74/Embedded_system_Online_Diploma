@@ -1,0 +1,49 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 7, 2023
+ *      Author: OmarSoliman74
+ */
+
+#include <stdio.h>
+void main()
+{
+	float a[2][2];
+	float b [2][2];
+	float sum [2][2];
+	int i,j;
+	printf("enter the element of matrix a : \n");
+	for (i=0;i<2;++i)
+	{
+		for (j=0;j<2;j++)
+		{
+			printf("enter element [%d][%d]:",i,j);
+			fflush(stdin);fflush(stdout);
+			scanf("%f",&a[i][j]);
+		}
+	}
+	printf("enter the element of matrix b : \n");
+	for (i=0;i<2;++i)
+	{
+		for (j=0;j<2;j++)
+		{
+			printf("enter element [%d][%d]:",i,j);
+			fflush(stdin);fflush(stdout);
+			scanf("%f",&b[i][j]);
+		}
+	}
+	printf("the sum matrix = \n");
+	for(i=0;i<2;++i)
+	{
+		for(j=0;j<2;++j)
+		{
+
+			printf("%f ",a[i][j]+b[i][j]);
+		}
+		printf("\n");
+	}
+
+
+
+}
+
