@@ -1,0 +1,27 @@
+#include <stdio.h>
+void main()
+{
+	int a[100];
+	 int i,x,j;
+	 printf("enter no of elements : ");
+	 fflush(stdin); fflush (stdout);
+	 scanf("%d",&x);
+	 for (i=0 ; i<x ; ++i)
+	 {
+		 printf("%d  ",a[i]);
+	 }
+	 printf("\n");
+	 printf("the location: ");
+	 fflush(stdin); fflush(stdout);
+	 scanf("%d",&j);
+
+
+	 printf("enter the number to be inserted :");
+fflush(stdin); fflush(stdout);
+scanf("%d",&a[j]);
+
+for (i=0 ; i<x ; ++i)
+	 {
+		 printf("%d \n",a[i]);
+	 }
+}
