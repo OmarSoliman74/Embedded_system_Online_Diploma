@@ -1,0 +1,51 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 7, 2023
+ *      Author: OmarSoliman74
+ */
+
+#include <stdio.h>
+void main()
+{
+	float a[100][100];
+	int i,j,r,c ;
+	printf("no. of rows: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&r);
+	printf("no. of columns: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&c);
+	printf("enter the elements :\n");
+	for (i=0 ; i<r ; i++)
+	{
+		for( j=0 ; j<c ; j++)
+		{
+			printf("element %d%d:",i,j);
+			fflush (stdin); fflush(stdout);
+			scanf("%f",&a[i][j]);
+		}
+	}
+
+	for (i=0 ; i<r ; ++i)
+	{
+		for(j=0 ; j<c ; ++j)
+		{
+			printf("%.2f ",a[i][j]);
+		}
+		printf("\n");
+	}
+	printf("the transpose :\n  ");
+	for (i=0 ; i<c ; i++)
+	{
+		for (j=0 ; j<r ; ++j)
+		{
+			printf("%.2f ",a[j][i]);
+		}
+		printf("\n");
+	}
+}
+
+
+
+
