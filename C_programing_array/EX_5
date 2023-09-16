@@ -1,0 +1,25 @@
+#include <stdio.h>
+void main()
+{
+	int a[100];
+		 int i,x,j;
+		 printf("enter no of elements : ");
+		 fflush(stdin); fflush (stdout);
+		 scanf("%d",&x);
+		 for (i=0 ; i<x ; ++i)
+		 {
+			 printf("%d  ",a[i]);
+		 }
+		 printf("\n");
+
+		 printf("enter the element to be searched: ");
+		 fflush(stdin); fflush(stdout);
+		 scanf("%d",&j);
+for (i=0;i<x;++i)
+{
+	if (a[i]==j)
+	{
+		 printf("the number located in :%d",i);
+	}
+}
+}
