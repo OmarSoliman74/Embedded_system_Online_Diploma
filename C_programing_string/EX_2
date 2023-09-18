@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+void main()
+{
+	char a[100];
+	int i ;
+	printf("enter a string : ");
+	fflush (stdout); fflush (stdout);
+	scanf("%s",&a[100]);
+for (i=0 ; a[i] != '\0' ; ++i);
+	printf("the length of string : %d",i);
+}
+
