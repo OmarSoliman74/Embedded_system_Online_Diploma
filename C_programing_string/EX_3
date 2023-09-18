@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+void main()
+{
+	char a[1000], r[1000];
+	int i, j, x = 0;
+
+
+	printf("enter string: ");
+	fflush (stdin); fflush(stdout);
+	scanf("%s", &a);
+
+	while (a[x] != '\0')
+	{
+		x++;
+	}
+	j = x - 1;
+
+	for (i = 0; i < x; i++)
+
+	{
+		r[i] = a[j];
+		j--;
+
+	}
+
+	printf("String After Reverse: %s", r);
+
+
+}
