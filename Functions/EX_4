@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+int f1(int a,int b);
+int main()
+{
+	int base , power;
+	printf("enter base number: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&base);
+	printf("enter power number: ");
+		fflush(stdin);fflush(stdout);
+		scanf("%d",&power);
+		printf("%d^%d=%d",base,power,f1(base,power));
+	return 0;
+}
+int f1(base,power)
+{
+	if (power != 0 )
+	{
+		return (base*f1(base,power-1));
+	}
+	return 1 ;
+
+}
+
+
