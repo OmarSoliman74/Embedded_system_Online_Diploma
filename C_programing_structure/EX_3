@@ -1,0 +1,28 @@
+#include <stdio.h>
+struct comp {
+    int real;
+    int img;
+};
+struct comp add(struct comp no1,struct comp no2)
+{
+    struct comp sum;
+    sum.real = no1.real + no2.real ;
+    sum.img = no1.img + no2.img ;
+    return sum ;
+}
+int main()
+{
+    struct comp sum,no1,no2;
+    printf("for 1st comlex number\n");
+    printf(" enter the real part : ");
+    scanf("%d",&no1.real);
+    printf("enter the imagin part : ");
+    scanf ("%d",&no1.img);
+    printf("for 2nd comlex number\n");
+    printf(" enter the real part : ");
+    scanf("%d",&no2.real);
+    printf("enter the imagin part : ");
+    scanf ("%d",&no2.img);
+    sum = add (no1,no2);
+    printf("sum of comlex number = %d +j %d",sum.real,sum.img);
+}
