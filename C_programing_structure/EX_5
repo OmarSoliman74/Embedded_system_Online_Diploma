@@ -1,0 +1,12 @@
+#include <stdio.h>
+#define PI 3.14
+#define area(r) ((PI)*(r)*(r))
+int main()
+{
+int t;
+float area ;
+printf("enter r : ");
+scanf("%d",&t);
+area=area(t);
+printf("Area = %.1f",area);
+}
