@@ -1,0 +1,27 @@
+#include <stdio.h>
+struct destance {
+    int feet;
+    float inch;
+} no1,no2,total;
+int main()
+{
+    printf("enter  1st destance :\n");
+    printf("in feet : ");
+    scanf("%d",&no1.feet);
+    printf("in inch: ");
+    scanf("%f",&no1.inch);
+    printf("enter 2nd destance: \n");
+    printf("in feet: ");
+    scanf("%d",&no2.feet);
+    printf("in inch: ");
+    scanf("%f",&no2.inch);
+    total.feet = no1.feet + no2.feet ;
+    total.inch = no1.inch + no2.inch ;
+    if(total.inch > 12) {
+        total.inch = total.inch - 12;
+        ++total.feet;
+    }
+
+
+    printf("the total destance = %d \' %.2f \" ",total.feet,total.inch);
+}
