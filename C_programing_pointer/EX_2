@@ -1,0 +1,24 @@
+// omar saad soliman_74 
+#include <stdio.h>
+
+int main()
+{
+  char alpha[27];
+  char *palpha;
+  palpha = alpha ;
+  for (int i = 0 ; i <26 ; i++ )
+  {
+      *palpha = i + 'A';
+      palpha++ ;
+  }
+   palpha = alpha ;
+  
+  
+  printf("Alphabets :  ");
+  for (int i =0 ; i <26; i++)
+  {
+      printf(" %c ",*palpha);
+      palpha ++ ;
+  }
+   
+}

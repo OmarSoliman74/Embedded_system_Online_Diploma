@@ -1,0 +1,22 @@
+// omar saad soliman_74 
+#include <stdio.h>
+
+int main()
+{
+   int m = 29 ;
+   int *Pm = &m ;
+   
+   printf("addrees of m = %x \n value of m = %d \n",&m,m);
+   printf("address of pointer Pm = %x \n valu of pointer Pm = %d \n",Pm,*Pm);
+   
+   m = 34 ;
+   printf("address of pointer Pm = %x \n valu of pointer Pm = %d \n ",Pm,*Pm);
+  
+  *Pm = 7 ;
+  printf("addrees of m = %x \n value of m = %d \n",&m,m);
+  
+  
+   
+   
+ 
+}
