@@ -1,0 +1,25 @@
+// omar saad soliman_74 
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+ int n , i , arr[14];
+ int *parr;
+ printf("enter the number of elements : ");
+ scanf("%d",&n);
+ parr=&arr[0];
+   printf("enter %d number in the array : \n",n);
+   for (i=0 ; i<=n-1;i++)
+   {
+       printf("enter elemnt %d : ",i);
+       scanf("%d",parr);
+       parr++;
+  }
+ printf("the reverse array : \n");
+   parr = &arr[n-1];
+   for (i=1;i<=n;i++)
+   {
+ printf("element %d = %d \n",i,*parr);
+       parr--;
+   }
+}
