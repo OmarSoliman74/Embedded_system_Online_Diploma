@@ -1,0 +1,27 @@
+// omar saad soliman_74 
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+  char str[50];
+  char rev[50];
+  char *pstr=str;
+  char *prev=rev;
+  int i =-1;
+ printf("enter string : ");
+  gets(str);
+   while (*pstr)
+   {
+       pstr++;
+       i++;
+   }
+  while (i>=0){
+      pstr--;
+      *prev=*pstr;
+      prev++;
+      --i;
+  }
+  *prev ='\0';
+  printf("the reverse of string : %s ",rev);
+}
